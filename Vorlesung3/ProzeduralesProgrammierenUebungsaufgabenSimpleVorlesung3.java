@@ -56,7 +56,7 @@ public class ProzeduralesProgrammierenUebungsaufgabenSimpleVorlesung3 {
         iban = iban.replaceFirst("40", String.valueOf(zwischenwert3));
         int zwischenwert4 = Integer.parseInt(iban.substring(22, 25)) % 97;
         int pruefsumme = 98 - zwischenwert4;
-        iban = "DE" + pruefsumme + " " + bankleitzahl + " " + "0000" + " " + kontonummer;
+        iban = "" + laenderkuerzel + pruefsumme + " " + bankleitzahl + " " + "0000" + " " + kontonummer;
         System.out.println(iban);
         System.out.println("==========================================================================\n");
     }
